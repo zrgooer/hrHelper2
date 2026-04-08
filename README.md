@@ -18,3 +18,16 @@ View your app in AI Studio: https://ai.studio/apps/1e89f75a-440f-453c-98ff-95bec
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deployment
+
+A GitHub Action is configured in `.github/workflows/deploy.yml` to automatically deploy the app to **GitHub Pages** upon pushing to the `main` branch. 
+
+To use it:
+1. Go to your repository settings on GitHub.
+2. Under "Pages", ensure the source is set to "GitHub Actions".
+3. Push your code to the `main` branch.
+
+## Version Control
+
+`.gitignore` is already optimized for a Vite/React application, covering dependencies, environment files, build outputs, and common IDE settings to keep your repository clean.
